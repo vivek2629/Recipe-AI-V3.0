@@ -9,7 +9,11 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://recipe-ai-v3-0.vercel.app/",
+  }),
+);
 app.use(express.json());
 const router = express.Router();
 
