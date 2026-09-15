@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/typography";
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.history::-webkit-scrollbar {
+  width: 6px;
+}
+
+.history::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.history::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+.history::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
