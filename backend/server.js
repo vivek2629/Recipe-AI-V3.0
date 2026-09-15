@@ -11,7 +11,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "https://recipe-ai-v3-0.vercel.app/",
+    origin: "https://recipe-ai-v3-0.vercel.app",
   }),
 );
 app.use(express.json());
