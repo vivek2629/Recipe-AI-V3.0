@@ -6,7 +6,7 @@ export const fetchChatHistory = async (jwtToken) => {
     },
   };
   const response = await fetch(
-    "http://localhost:3000/api/chats/history",
+    "https://recipe-ai-v3-0.onrender.com/api/chats/history",
     options,
   );
 
@@ -25,7 +25,7 @@ export const deleteChat = async (chatId, jwtToken) => {
     },
   };
   const response = await fetch(
-    `http://localhost:3000/api/chats/${chatId}`,
+    `https://recipe-ai-v3-0.onrender.com/api/chats/${chatId}`,
     options,
   );
   if (!response.ok) {

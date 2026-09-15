@@ -41,7 +41,7 @@ function Main() {
     };
     try {
       const response = await fetch(
-        `http://localhost:3000/api/chats/${chatId}`,
+        `https://recipe-ai-v3-0.onrender.com/api/chats/${chatId}`,
         options,
       );
       const data = await response.json();

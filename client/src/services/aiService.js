@@ -10,7 +10,10 @@ export const sendChatMessage = async (query, chatId, jwtToken) => {
       chatId,
     }),
   };
-  const response = await fetch("http://localhost:3000/api/ai/chat", options);
+  const response = await fetch(
+    "https://recipe-ai-v3-0.onrender.com/api/ai/chat",
+    options,
+  );
   const data = await response.json();
 
   if (!response.ok) {

@@ -1,5 +1,5 @@
 export const loginUser = async (userDetails) => {
-  const url = "http://localhost:3000/api/auth/login";
+  const url = "https://recipe-ai-v3-0.onrender.com/api/auth/login";
   const options = {
     method: "POST",
     body: JSON.stringify(userDetails),
@@ -18,7 +18,7 @@ export const loginUser = async (userDetails) => {
 };
 
 export const signupUser = async (userDetails) => {
-  const url = "http://localhost:3000/api/auth/signup";
+  const url = "https://recipe-ai-v3-0.onrender.com/api/auth/signup";
   const options = {
     method: "POST",
     body: JSON.stringify(userDetails),
@@ -35,7 +35,7 @@ export const signupUser = async (userDetails) => {
 };
 
 export const googleLogin = async (code) => {
-  const url = "http://localhost:3000/api/auth/google";
+  const url = "https://recipe-ai-v3-0.onrender.com/api/auth/google";
   const options = {
     method: "POST",
     headers: {
